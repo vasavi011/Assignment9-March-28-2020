@@ -17,7 +17,7 @@ public class Commision
 	 }
 	 else if(amount>25000)
 	 {
-		 int commission = (int) ((0.8*amount)+800);
+		 int commission = (int) ((0.8*amount)+500);
 		 System.out.println(commission);
 
 	 }
