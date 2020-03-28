@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Commision
+{
+	public static void main(String arg[])	
+	{
+	  Scanner sc=new Scanner(System.in);
+	  System.out.print("Enter amount:");
+	 int amount = sc.nextInt();
+	 if (amount<10000)
+	 {
+		 System.out.println("No Commission");
+	 }
+	 else if( amount>=10000 && amount <=25000)
+	 {
+		 int commission = (int) (0.1 * amount);
+		 System.out.println(commission);
+	 }
+	 else if(amount>25000)
+	 {
+		 int commission = (int) ((0.8*amount)+800);
+		 System.out.println(commission);
+
+	 }
